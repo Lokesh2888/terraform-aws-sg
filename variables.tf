@@ -1,7 +1,7 @@
 variable "sg_name" {
-  type = string 
+  type = string
 }
-  
+
 variable "sg_description" {
   type = string
 }
@@ -17,3 +17,4 @@ variable "project" {
 variable "environment" {
   type = string
 }
+

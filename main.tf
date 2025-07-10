@@ -5,10 +5,11 @@ resource "aws_security_group" "main" {
   vpc_id      = var.vpc_id
 
   tags = merge(
-    local.common_tags,
-    var.sg_tags,
+    var.sg_tags
+    local.common_tags, 
     {
-        Name = "${var.project}-${var.environment}-${var.sg_name}"
+        Name = "${var.var.project}-${var.var.environment}-${var.sg_name}"
     }
+
   )
 }
